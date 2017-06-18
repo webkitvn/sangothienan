@@ -868,6 +868,21 @@ footer .social li a{
   max-width: 100%;
   margin: 0 auto;
 }
+.woocommerce figure{
+  margin: 0;
+}
+.woocommerce div.product div.images .flex-control-thumbs li{
+  float: left;
+}
+.woocommerce div.product .woocommerce-product-gallery--columns-3 .flex-control-thumbs li:nth-child(3n+1), 
+.woocommerce div.product .woocommerce-product-gallery--columns-4 .flex-control-thumbs li:nth-child(4n+1), 
+.woocommerce div.product .woocommerce-product-gallery--columns-5 .flex-control-thumbs li:nth-child(5n+1){
+  clear: none;
+}
+.woocommerce div.product div.images .flex-control-thumbs li img{
+  width: 100%;
+  height: auto;
+}
 .woocommerce #content div.product div.images, 
 .woocommerce div.product div.images, 
 .woocommerce-page #content div.product div.images, 

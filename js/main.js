@@ -63,7 +63,15 @@ jQuery(document).ready(function($) {
     	responsive: true,
     	arrows: false
 	});
-
+    $('.woocommerce-product-gallery .flex-control-thumbs').slick({
+        //autoplay: true,
+        infinite: false,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        dots: false,
+        responsive: true,
+        arrows: false
+    });
     $('.project-images-slider').slick({
         autoplay: true,
         fade: true,

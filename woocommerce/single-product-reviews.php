@@ -37,7 +37,7 @@ if ( ! comments_open() ) {
 			  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=1864542897125456";
 			  fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));</script>
-			<div class="fb-comments" data-href="<?php the_permalink();?>" data-numposts="5"></div>
+			<div class="fb-comments" data-href="<?php the_permalink();?>" data-numposts="5" data-width="100%"></div>
 		</div>
 	</div>
 	<div class="col s12 l6">

@@ -67,4 +67,13 @@
     #main-menu ul ul.active {
         transform: translateX(0);
     }
+    .page-cover h1, .page-cover .title{
+        font-size: 2em;
+    }
+    .page-cover h2{
+        font-size: 1.5em;
+    }
+    .yith_magnifier_gallery, .caroufredsel_wrapper{
+        height: auto !important;
+    }
 }
