@@ -114,7 +114,7 @@ function sango_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
-
+	wp_localize_script( 'main-js', 'sango_ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' )));
 	wp_enqueue_style( 'sango-materialize-css', get_template_directory_uri() . '/css/materialize.css', array(), '1.0', 'all' );
 	wp_enqueue_style( 'slick-css', get_template_directory_uri() . '/css/slick.css', array(), '1.6.0', 'all' );
 	wp_enqueue_style( 'slick-theme-css', get_template_directory_uri() . '/css/slick-theme.css', array(), '1.6.0', 'all' );

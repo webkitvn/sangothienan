@@ -19,7 +19,7 @@
 				<div class="block-info">
 					<a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
 					<div class="entry-description">
-						<p><?php echo get_the_excerpt(); ?></p>
+						<p><?php echo string_limit_words(strip_tags(get_the_content()), 60); ?></p>
 					</div>
 					<a href="<?php the_permalink(); ?>" class="sango-btn">Xem tiếp</a>
 				</div>

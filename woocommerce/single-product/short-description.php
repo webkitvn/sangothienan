@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-global $post;
+global $post, $product;
 
 if ( ! $post->post_excerpt ) {
 	return;
@@ -28,5 +28,24 @@ if ( ! $post->post_excerpt ) {
 
 ?>
 <div class="woocommerce-product-details__short-description">
-    <?php echo apply_filters( 'woocommerce_short_description', $post->post_excerpt ); ?>
+	<?php 
+		$product_sku = $product->get_sku();
+		$product_qty = $product->get_stock_quantity();
+		$product_wei = $product->get_weight();
+		$product_len = $product->get_length();
+		$product_wid = $product->get_width();
+		$product_hei = $product->get_height();
+	?>
+    <p>
+	    <strong>Nhà sản xuất:</strong> MAXLOCK<br>
+		<strong>Mã sản phẩm:</strong> <?php echo $product_sku; ?><br>
+		<strong>Hàng trong kho:</strong> 
+			<?php echo $product_qty != 0 ? $product_qty : "Hết"; ?><br>
+		<strong>Trọng lượng:</strong> 
+			<?php echo $product_wei != 0 ? $product_wei.get_option( 'woocommerce_weight_unit' ) : ""; ?><br>
+		<strong>Kích thước (L x W x H):</strong> 
+			<?php echo $product_len != 0 ? $product_len.get_option( 'woocommerce_dimension_unit' ) : ""; ?> x 
+			<?php echo $product_wid != 0 ? $product_wid.get_option( 'woocommerce_dimension_unit' ) : ""; ?> x 
+			<?php echo $product_hei != 0 ? $product_hei.get_option( 'woocommerce_dimension_unit' ) : ""; ?>
+	</p>
 </div>

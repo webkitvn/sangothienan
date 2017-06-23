@@ -92,7 +92,7 @@ $image = get_field('page_cover');
 			<?php if ( $products->have_posts() ) : ?>
 
 			<?php while($products->have_posts()) : $products->the_post(); ?>
-				<div id="product_<?php echo $product->id ?>" <?php post_class('col s6 m4'); ?>>
+				<div id="product_<?php echo $product->id ?>" <?php post_class('col s12 m6 l4'); ?>>
 					<div class="product-item">
 						<div class="image-wrapper">
 							<?php woocommerce_template_loop_product_thumbnail() ?>

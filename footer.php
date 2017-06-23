@@ -16,7 +16,7 @@
 			<div class="row">
 				<div class="col s12 l2">
 					<a href="<?php bloginfo('home');?>">
-						<img src="<?php echo get_template_directory_uri();?>/img/logo-thienan.png" alt="Sàn gỗ Thiên An">
+						<img src="<?php echo get_template_directory_uri();?>/img/thienan-logo.svg" alt="Sàn gỗ Thiên Ân">
 					</a>
 				</div>
 				<div class="col s12 l8">

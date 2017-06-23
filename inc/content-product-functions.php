@@ -20,13 +20,52 @@ function sango_product_overlay_start(){
 }
 add_action('woocommerce_before_shop_loop_item_title', 'sango_product_overlay_start', 15);
 function sango_product_overlay_end(){
+	global $product;
 ?>
-		<img src="<?php echo get_template_directory_uri()?>/img/thiena-icon.png" alt="<?php the_title() ?>" >
+		<img src="<?php echo get_template_directory_uri()?>/img/thienan-icon.svg" alt="<?php the_title() ?>" >
 		<div class="buttons-set">
-			<a class="sango-btn" href="#quickview" >Xem Nhanh</a>
+			<a class="sango-btn quickview-btn" href="#quickview" data-id="<?php echo $product->get_id(); ?>" >Xem Nhanh</a>
 			<a class="sango-btn" href="<?php the_permalink() ?>" >Mua Ngay</a>
 		</div>
 	</div></div></div>
 <?php 
 }
 add_action('woocommerce_before_shop_loop_item_title', 'sango_product_overlay_end', 20);
+
+//PROCESS QUICKVIEW
+  function product_quick_view(){
+    $id = $_POST['id'];
+    woocommerce_get_template_part('content', 'quickview');
+    wp_die();
+  }
+  add_action('wp_ajax_product_quick_view', 'product_quick_view');
+  add_action('wp_ajax_nopriv_product_quick_view', 'product_quick_view');
+  
+  
+  //AJAX CART COUNT
+  add_filter('add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment');
+ 
+  function woocommerce_header_add_to_cart_fragment( $fragments ) {
+    global $woocommerce;
+    
+    ob_start();
+    
+    ?>
+    <a class="cart-customlocation" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><i class="material-icons">shopping_basket</i> <span class="text"><?php echo _e("Giỏ hàng") ?></span> <span class="qty"><?php echo WC()->cart->get_cart_contents_count(); ?></span></a>
+    <?php
+    
+    $fragments['a.cart-customlocation'] = ob_get_clean();
+    
+    return $fragments;
+    
+  }
+  
+  // check for empty-cart get param to clear the cart
+  add_action( 'init', 'woocommerce_clear_cart_url' );
+  function woocommerce_clear_cart_url() {
+    global $woocommerce;
+    
+    if ( isset( $_GET['empty-cart'] ) ) {
+      $woocommerce->cart->empty_cart(); 
+    }
+  }

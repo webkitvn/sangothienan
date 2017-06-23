@@ -33,7 +33,7 @@
 			</div>
 			<div class="col logo">
 				<a href="<?php bloginfo('home'); ?>">
-					<img src="<?php echo get_template_directory_uri();?>/img/logo-thienan.png" alt="Sàn gỗ Thiên An">
+					<img src="<?php echo get_template_directory_uri();?>/img/thienan-logo.svg" alt="Sàn gỗ Thiên Ân">
 				</a>
 			</div>
 			<div class="col">
@@ -44,7 +44,7 @@
 	
 	<div class="side-nav" id="main-menu">
 		<div class="sidenav-wrapper">
-			<a href="#" class="close-btn close-menu"><i class="fa fa-times" aria-hidden="true"></i></a>
+			<a href="#" class="close-btn close-menu">Close <i class="close-x" aria-hidden="true"></i></a>
 			<?php wp_nav_menu( array('menu' => 'Primary Menu', 'theme_location' => 'primary-menu' )); ?>
 		</div>
 	</div>

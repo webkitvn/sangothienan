@@ -27,6 +27,18 @@ get_header('shop'); ?>
 	                        <?php previous_post_link( '%link', '<i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>' ); ?>
 	                        <?php next_post_link( '%link', '<i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>' ); ?>
 		                </div>
+
+		                <div id="facebook-comments">
+							<div id="fb-root"></div>
+							<script>(function(d, s, id) {
+							  var js, fjs = d.getElementsByTagName(s)[0];
+							  if (d.getElementById(id)) return;
+							  js = d.createElement(s); js.id = id;
+							  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=1864542897125456";
+							  fjs.parentNode.insertBefore(js, fjs);
+							}(document, 'script', 'facebook-jssdk'));</script>
+							<div class="fb-comments" data-href="<?php the_permalink();?>" data-numposts="5" data-width="100%"></div>
+						</div>
 					</div>
 				</div>
 				<div class="col s12 l4">

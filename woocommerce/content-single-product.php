@@ -38,17 +38,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <div id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="row">
-	<div class="col s12 m6 l7">
-		<?php
-			/**
-			 * woocommerce_before_single_product_summary hook.
-			 *
-			 * @hooked woocommerce_show_product_sale_flash - 10
-			 * @hooked woocommerce_show_product_images - 20
-			 */
-			do_action( 'woocommerce_before_single_product_summary' );
-		?>
-	</div>
+		<div class="col s12 m6 l7">
+			<?php
+				/**
+				 * woocommerce_before_single_product_summary hook.
+				 *
+				 * @hooked woocommerce_show_product_sale_flash - 10
+				 * @hooked woocommerce_show_product_images - 20
+				 */
+				do_action( 'woocommerce_before_single_product_summary' );
+			?>
+		</div>
 	<div class="col s12 m6 l5">
 	<div class="summary entry-summary">
 
@@ -71,25 +71,25 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<div class="more-info">
 		<p><small>Mua hàng qua điện thoại</small></p>
 		<div class="phones">
-			<img src="<?php echo get_template_directory_uri();?>/img/24h-icon.png" alt="24h">
+			<img src="<?php echo get_template_directory_uri();?>/img/24h-icon.svg" alt="24h">
 			<span class="first">0912 345 678</span> | <span>0901 123 456</span>
 		</div>
 		<p><b>Tại sao nên mua hàng tại Thiên Ân</b></p>
 		<ul>
 			<li>
-				<img src="<?php echo get_template_directory_uri();?>/img/icon-1.png" alt="Nhập khẩu chính hãng tại Đức">
+				<img src="<?php echo get_template_directory_uri();?>/img/icon-1.svg" alt="Nhập khẩu chính hãng tại Đức">
 				Nhập khẩu chính hãng tại Đức
 			</li>
 			<li>
-				<img src="<?php echo get_template_directory_uri();?>/img/icon-2.png" alt="Miễn Phí Giao Hàng Trong Nội Thành">
+				<img src="<?php echo get_template_directory_uri();?>/img/icon-2.svg" alt="Miễn Phí Giao Hàng Trong Nội Thành">
 				Miễn Phí Giao Hàng Trong Nội Thành
 			</li>
 			<li>
-				<img src="<?php echo get_template_directory_uri();?>/img/icon-3.png" alt="Bảo Hành Trọn Đời Sản Phẩm">
+				<img src="<?php echo get_template_directory_uri();?>/img/icon-3.svg" alt="Bảo Hành Trọn Đời Sản Phẩm">
 				Bảo Hành Trọn Đời Sản Phẩm
 			</li>
 			<li>
-				<img src="<?php echo get_template_directory_uri();?>/img/icon-4.png" alt="Chứng Nhận Quốc Tế">
+				<img src="<?php echo get_template_directory_uri();?>/img/icon-4.svg" alt="Chứng Nhận Quốc Tế">
 				Chứng Nhận Quốc Tế
 			</li>
 		</ul>
@@ -112,3 +112,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 </div><!-- #product-<?php the_ID(); ?> -->
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>
+<div id="quickview-modal" class="modal">
+    <div class="valign-wrapper">
+	      <div class="center-align">
+	        <div class="progress">
+	            <div class="indeterminate"></div>
+	        </div>
+	      </div>
+    </div>
+</div>

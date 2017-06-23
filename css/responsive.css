@@ -1,4 +1,7 @@
 @media screen and (max-width: 900px){
+    body{
+        padding-top: 130px;
+    }
     header .header-wrapper{
         display: block;
         position: relative;
@@ -6,11 +9,15 @@
     header .left-menu{
         float: none !important;
         text-align: center;
+        margin: 5px 0 0;
     }
     header #menu-toogle{
         position: absolute;
         top: 15px;
         right: 10px;
+    }
+    header ul.left li{
+        margin: 0 5px;
     }
     .feature-products-wrapper .section-title-block, .new-blog-wrapper .section-title-block{
         position: static;
@@ -73,7 +80,7 @@
     .page-cover h2{
         font-size: 1.5em;
     }
-    .yith_magnifier_gallery, .caroufredsel_wrapper{
-        height: auto !important;
+    .sale-blocks-wrapper .block .content{
+        display: none;
     }
 }

@@ -35,6 +35,7 @@
 				</div>
 				<div class="block-info">
 					<a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+					<?php woocommerce_template_loop_price() ?>
 					<div class="entry-description">
 						<p><?php echo string_limit_words(strip_tags(get_the_content()), 60); ?></p>
 					</div>

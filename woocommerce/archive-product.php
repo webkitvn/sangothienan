@@ -48,12 +48,12 @@ get_header( 'shop' ); ?>
 						$thumbnail_id = get_woocommerce_term_meta( $cat->term_id, 'thumbnail_id', true );
 						$cat_img = wp_get_attachment_image_src( $thumbnail_id, 'product_cate_size' );
 				?>
-				<div class="col s6">
+				<div class="col s12 m6">
 					<a class="item" href="<?php echo get_term_link($cat->slug, 'product_cat') ?>">
 						<img src="<?php echo $cat_img[0] ?>" alt="<?php echo $cat->name ?>">
 						<div class="overlay">
 							<div>
-								<img src="<?php echo get_template_directory_uri();?>/img/thiena-icon.png" alt="thiena">
+								<img src="<?php echo get_template_directory_uri();?>/img/thienan-icon.svg" alt="thiena">
 								<h3><?php echo $cat->name ?></h3>
 							</div>
 						</div>
