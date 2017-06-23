@@ -116,6 +116,7 @@ function sango_scripts() {
 	}
 	wp_localize_script( 'main-js', 'sango_ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' )));
 	wp_enqueue_style( 'sango-materialize-css', get_template_directory_uri() . '/css/materialize.css', array(), '1.0', 'all' );
+	wp_enqueue_style( 'sango-materialize-icon', 'https://fonts.googleapis.com/icon?family=Material+Icons', array(), '1.0', 'all' );
 	wp_enqueue_style( 'slick-css', get_template_directory_uri() . '/css/slick.css', array(), '1.6.0', 'all' );
 	wp_enqueue_style( 'slick-theme-css', get_template_directory_uri() . '/css/slick-theme.css', array(), '1.6.0', 'all' );
 	wp_enqueue_style( 'responsive-css', get_template_directory_uri() . '/css/responsive.css', array(), '1.0', 'all' );
@@ -219,3 +220,24 @@ function register_my_menus() {
   );
 }
 add_action( 'init', 'register_my_menus' );
+
+add_filter( 'woocommerce_checkout_fields' , 'webbalo_custom_override_checkout_fields' );
+add_filter( 'woocommerce_default_address_fields' , 'webbalo_custom_override_default_address_fields');
+// Our hooked in function - $fields is passed via the filter!
+function webbalo_custom_override_checkout_fields( $fields ) {
+    //unset($fields['order']['order_comments']);
+    //unset($fields['billing']['billing_first_name']);
+    unset($fields['billing']['billing_company']);
+    unset($fields['billing']['billing_country']);
+    //unset($fields['billing']['billing_city']);
+    unset($fields['billing']['billing_postcode']);
+    return $fields;
+}
+function webbalo_custom_override_default_address_fields( $address_fields ) 
+{
+    unset( $address_fields['postcode'] );
+    unset( $address_fields['country'] );
+    unset( $address_fields['address_2'] );
+    unset( $address_fields['company'] );
+    return $address_fields;
+}

@@ -26,9 +26,9 @@
 		<div class="header-wrapper">
 			<div class="col">
 				<ul class="left left-menu">
-					<li class="account"><a href="#">Đăng nhập</a></li>
+					<li class="account hide"><a href="#">Đăng nhập</a></li>
 					<li class="cart"><a href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Giỏ hàng <span class="qty"><?php echo WC()->cart->get_cart_contents_count(); ?></span></a></li>
-					<li class="search"><a href="#" id="search"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+					<li class="search"><a href="#search-modal" id="search"><i class="fa fa-search" aria-hidden="true"></i></a></li>
 				</ul>
 			</div>
 			<div class="col logo">

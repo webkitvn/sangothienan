@@ -46,7 +46,11 @@
 			</div>
 		</div>
 	</footer>
-
+	<div id="search-modal" class="modal">
+	    <div class="modal-content">
+	    	<?php get_template_part('woocommerce/product', 'searchform'); ?>
+	    </div>
+    </div>
 <?php wp_footer(); ?>
 
 </body>

@@ -46,6 +46,11 @@ $image = get_field('cover_image', $taxonomy . '_' . $term_id);
 	<section class="product-list">
 		<div class="product-list-wrapper">
 			<div class="row">
+				<div class="col s12">
+					<?php wc_print_notices() ?>
+				</div>
+			</div>
+			<div class="row">
 				<div class="col s12 l3 categories hide-on-med-and-down">
 					<aside>
 						<ul>

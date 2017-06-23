@@ -1880,3 +1880,92 @@ input[type="number"]::-webkit-inner-spin-button {
 .categories ul.child-cats a:hover{
   color: #adbc37;
 }
+/*--SEARCH-MODAL----------------------*/
+#search-modal{
+    border-radius: 0;
+}
+#search-modal .modal-content{
+    padding: 0;
+}
+#search-modal .modal-content nav{
+    background: #111;
+}
+#search-modal .modal-content nav input, #search-modal .modal-content nav input:focus{
+    background: transparent;
+    margin: 0;
+}
+.woocommerce-checkout h3{
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.woocommerce-checkout input[type=text],
+.woocommerce-checkout input[type=email],
+.woocommerce-checkout input[type=tel], 
+.woocommerce-checkout textarea{
+  border: 1px solid #adbc37;
+  box-sizing: border-box;
+  padding: 0 10px;
+  box-shadow: none;
+}
+.woocommerce-checkout textarea{
+  padding: 10px;
+}
+.woocommerce-checkout input:focus{
+  outline: none;
+  border: 1px solid #909e1c !important;
+}
+.has-border {
+    border: 2px solid #adbc37;
+    padding: 15px 30px 30px;
+    background: rgba(248, 248, 248, 0.3);
+}
+#order_review table.shop_table{
+  border-radius: 0;
+  border: 1px solid #DDD;
+}
+#order_review table.shop_table thead, #order_review table.shop_table thead th{
+  background: #f1f1f1;
+  color: #111;
+}
+#order_review table.shop_table thead th:first-child{
+  width: 50%;
+}
+#order_review table.shop_table thead th:last-child{
+  text-align: center;
+}
+#order_review table.shop_table thead th{
+  border-bottom: 3px solid #f1f1f1;
+}
+#order_review table.shop_table .product-name{
+  word-break: break-word;
+  text-overflow: ellipsis;
+}
+#order_review table.shop_table tr td:last-child{
+  text-align: center;
+}
+#add_payment_method #payment, .woocommerce-cart #payment, .woocommerce-checkout #payment{
+  background: none;
+}
+#add_payment_method #payment div.payment_box p:last-child, .woocommerce-cart #payment div.payment_box p:last-child, .woocommerce-checkout #payment div.payment_box p:last-child{
+  margin: 0;
+}
+.woocommerce-error{
+  padding-left: 50px !important;
+}
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button{
+  background: #c19425;
+  color: #FFF;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+.woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover {
+  color: #FFF;
+  background: #adbc37;
+}
+.checkout_coupon input[type=submit]{
+  height: 44px;
+}
+.woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register{
+  border-radius: 0;
+}
