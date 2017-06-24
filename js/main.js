@@ -34,7 +34,7 @@ jQuery(document).ready(function($) {
         $(this).parent().children('ul').removeClass('unactive').addClass('active');
         return false;
     });
-    $('#main-menu ul ul a.close-btn').on('click', function(e) {
+    $('#main-menu a.close-btn').on('click', function(e) {
         $(this).parent().removeClass('active').addClass('unactive');
         return false;
     });
