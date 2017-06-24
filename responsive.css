@@ -1,3 +1,88 @@
 @media screen and (max-width: 900px){
-    header
+    body{
+        padding-top: 130px;
+    }
+    header .header-wrapper{
+        display: block;
+        position: relative;
+    }
+    header .left-menu{
+        float: none !important;
+        text-align: center;
+        margin: 5px 0 0;
+        display: flex;
+        position: relative;
+    }
+    header #menu-toogle{
+        position: absolute;
+        top: 15px;
+        right: 10px;
+    }
+    header ul.left li{
+        margin: 0 5px;
+    }
+    .feature-products-wrapper .section-title-block, .new-blog-wrapper .section-title-block{
+        position: static;
+        width: 100%;
+        padding: 0 20px 20px;
+        height: auto;
+    }
+    .feature-products-wrapper .feature-product-image, .new-blog-wrapper .feature-blog-image{
+        padding: 0;
+        width: 100%;
+    }
+    .feature-products-wrapper .feature-product-image img, .new-blog-wrapper .feature-blog-image img{
+        width: 100%;
+        height: auto;
+    }
+    .feature-products-wrapper .block-info, .new-blog-wrapper .block-info{
+        position: static;
+        width: 100%;
+        padding: 20px;
+    }
+    .product-slider .slick-arrow, .blog-slider .slick-arrow{
+        top: 20% !important;
+        bottom: initial !important;
+    }
+    .product-slider .slick-arrow.prev, .blog-slider .slick-arrow.prev{
+        left: 0;
+        right: initial;
+    }
+    .product-slider .slick-arrow.next, .blog-slider .slick-arrow.next{
+        right: 0;
+        left: initial;
+    }
+    .product-blocks-wrapper .block .block-info p{
+        display: none;
+    }
+    .testimonios-wrapper .item h4{
+        font-size: 1em;
+    }
+    .newsletter-wrapper form input[type=submit]{
+        height: 42px;
+    }
+    footer{
+        text-align: center;
+    }
+    footer .footer-menu a{
+        display: inline-block;
+    }
+    footer .social{
+        float: none;
+    }
+    footer .copyright .right{
+        display: none;
+    }
+    #main-menu ul ul.active {
+        transform: translateX(0);
+    }
+    .page-cover h1, .page-cover .title{
+        font-size: 2em;
+    }
+    .page-cover h2{
+        font-size: 1.5em;
+    }
+    .sale-blocks-wrapper .block .content{
+        display: none;
+    }
 }
