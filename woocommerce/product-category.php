@@ -73,13 +73,14 @@ $image = get_field('cover_image', $taxonomy . '_' . $term_id);
 										'hide_empty' => 0
 									);
 									$child_categories = get_categories( $args );
-
+									if($child_categories) :
 								?>
 								<ul class="child-cats">
 									<?php foreach($child_categories as $child) : ?>
 									<li><a href="<?php echo get_term_link( $child->term_id, 'product_cat' ); ?>"><?php echo $child->name ?></a></li>
 									<?php endforeach; ?>
 								</ul>
+								<?php endif; ?>
 							</li>
 							<?php 
 								$args = array(
