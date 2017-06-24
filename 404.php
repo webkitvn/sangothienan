@@ -9,8 +9,8 @@
 
 get_header(); ?>
 
-	<section class="404-error">
-		<div class="align-center">
+	<section class="404-error" style="padding: 30vh 0">
+		<div class="center-align">
 			<h2>XIN LỖI BẠN, TRANG NÀY HIỆN KHÔNG TỒN TẠI</h2>
 		</div>
 	</section>
