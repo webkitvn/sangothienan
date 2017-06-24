@@ -591,6 +591,7 @@ header #menu-toogle{
 }
 .advances-wrapper .item img{
   margin-right: 10px;
+  width: 35px;
 }
 .advances-wrapper .item h3{
   font-size: 1em;
