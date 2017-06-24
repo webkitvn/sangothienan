@@ -1511,6 +1511,13 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 2em;
   display: inline-block;
 }
+.widget-area{
+  position: sticky;
+  top: 80px;
+}
+.sidebar-item{
+  margin-bottom: 2em;
+}
 .sidebar-item h3{
   margin-top: 0;
   font-size: 2em;
@@ -1552,6 +1559,10 @@ input[type="number"]::-webkit-inner-spin-button {
 .sidebar-item dd p{
   margin-top: 0;
   font-size: .85em;
+}
+.sidebar-item img{
+  width: 100%;
+  height: auto;
 }
 .about-intro .about-intro-wrapper{
   width: 1200px;
