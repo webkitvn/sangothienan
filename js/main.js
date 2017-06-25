@@ -38,6 +38,12 @@ jQuery(document).ready(function($) {
         $(this).parent().removeClass('active').addClass('unactive');
         return false;
     });
+
+    $('.category-list-wrapper .item, .product-item .image-wrapper, .project-item').each( function() { $(this).hoverdir(); } );
+    $('.about-product-cats .main-cat .toggle-btn').on('click', function(){
+        $(this).toggleClass('active');
+        $(this).parent().parent().find('.sub-cats').slideToggle();
+    })
     $('.cate-slider-wrapper').slick({
         infinite: false,
         responsive: true,

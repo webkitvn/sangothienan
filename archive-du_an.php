@@ -19,15 +19,15 @@
 			?>
 			<div class="row">
 				<?php while(have_posts()) : the_post(); ?>
-				<div class="col s6 l4">
+				<div class="col s12 m6 l4">
 					<a class="project-item" href="<?php the_permalink(); ?>">
 						<?php the_post_thumbnail(); ?>
-						<span class="overlay">
+						<div class="overlay">
 							<div>
-								<img src="<?php echo get_template_directory_uri(); ?>/img/thiena-icon.png" alt="<?php the_title_attribute(); ?>">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/thienan-icon.svg" alt="<?php the_title_attribute(); ?>">
 								<h3><?php the_title() ?></h3>
 							</div>
-						</span>
+						</div>
 					</a>
 				</div>
 				<?php endwhile; ?>

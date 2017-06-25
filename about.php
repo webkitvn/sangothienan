@@ -68,11 +68,32 @@
 			<div class="row">
 				<?php 
 					foreach($product_cats as $cat) :
+						$args = array(
+					        'taxonomy'     => 'product_cat',
+					        'orderby'      => 'id',
+					        'hide_empty'   => 0,
+					        'parent' => $cat->term_id
+					  	);
+						$sub_cats = get_categories($args); 
 				?>
 					<div class="col s12 m6 l6">
-						<a class="cat-item" href="<?php echo get_term_link($cat->slug, 'product_cat') ?>">
-							<?php echo $cat->name ?> <span>+</span>
-						</a>
+						<div class="main-cat">
+							<a class="cat-item" href="<?php echo get_term_link($cat->slug, 'product_cat') ?>">
+								<?php echo $cat->name ?>
+							</a>
+							<?php if($sub_cats) : ?>
+								<div class="toggle-btn">
+									<span></span><span></span>
+								</div>
+							<?php endif; ?>
+						</div>
+						<div class="sub-cats">
+							<ul>
+								<?php foreach($sub_cats as $cat) : ?>
+									<li><a href="<?php get_term_link($cat->slug, 'product_cat'); ?>"><?php echo $cat->name ?></a></li>
+								<?php endforeach; ?>
+							</ul>
+						</div>
 					</div>
 				<?php endforeach; ?>
 			</div>

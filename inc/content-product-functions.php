@@ -23,10 +23,10 @@ function sango_product_overlay_end(){
 	global $product;
 ?>
 		<img src="<?php echo get_template_directory_uri()?>/img/thienan-icon.svg" alt="<?php the_title() ?>" >
-		<div class="buttons-set">
+		<span class="buttons-set">
 			<a class="sango-btn quickview-btn hide-on-med-and-down" href="#quickview" data-id="<?php echo $product->get_id(); ?>" >Xem Nhanh</a>
 			<a class="sango-btn" href="<?php the_permalink() ?>" >Mua Ngay</a>
-		</div>
+		</span>
 	</div></div></div>
 <?php 
 }

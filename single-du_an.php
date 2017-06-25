@@ -15,7 +15,7 @@
 	<section class="project-detail">
 		<div class="project-detail-wrapper">
 			<div class="row">
-				<div class="col s12 l4">
+				<div class="col s12 l4 sticky">
 					<div class="project-info">
 						<h1><?php the_title() ?></h1>
 						<div class="content">
@@ -36,11 +36,23 @@
 	                    <?php endforeach; ?>
 			        </div>
 			   	 	<?php endif; ?>
+			   	 	<div id="facebook-comment">
+			   	 		<div id="fb-root"></div>
+						<script>(function(d, s, id) {
+						  var js, fjs = d.getElementsByTagName(s)[0];
+						  if (d.getElementById(id)) return;
+						  js = d.createElement(s); js.id = id;
+						  js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.9&appId=1864542897125456";
+						  fjs.parentNode.insertBefore(js, fjs);
+						}(document, 'script', 'facebook-jssdk'));</script>
+						<div class="fb-comments" data-href="<?php the_permalink(); ?>" data-width="100%" data-numposts="5"></div>
+			   	 	</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<?php $loop = new WP_Query(array(
+	<?php 
+		$loop = new WP_Query(array(
 			'post_type' => 'du_an',
 			'posts_per_page' => 3,
 			'order_by' => 'rand'
@@ -56,7 +68,7 @@
 			</div>
 			<div class="row">
 				<?php while($loop->have_posts()) : $loop->the_post(); ?>
-				<div class="col s6 l4">
+				<div class="col s12 m4 l4">
 					<div class="project-item">
 						<a class="project-item" href="<?php the_permalink(); ?>">
 							<?php the_post_thumbnail(); ?>
