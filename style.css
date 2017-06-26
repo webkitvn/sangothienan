@@ -101,7 +101,11 @@ header #menu-toogle{
   display: block;
   width: 32px;
   height: 42px;
-  background: url('./img/menu.svg') no-repeat;
+  margin-right: 1px;
+}
+header #menu-toogle img{
+  width: 100%;
+  height: auto;
 }
 #main-menu{
   overflow: initial;
@@ -120,6 +124,9 @@ header #menu-toogle{
 }
 #main-menu ul li{
   border-bottom: 1px solid #DDD;
+}
+#main-menu ul li a{
+  width: 100%;
 }
 #main-menu ul ul{
   position: absolute;
@@ -143,6 +150,8 @@ header #menu-toogle{
   transform: translateX(0);
 }
 #main-menu a.close-btn{
+  width: auto;
+  padding: 0;
   display: inline-block;
   position: absolute;
   top: 20px;

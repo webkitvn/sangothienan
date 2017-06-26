@@ -10,10 +10,16 @@
         float: none !important;
         text-align: center;
         margin: 5px 0 0;
+        position: relative;
+    }
+    header .left-menu li.cart{
+        position: absolute;
+        top: 5px;
+        left: 5px;
     }
     header #menu-toogle{
         position: absolute;
-        top: 15px;
+        top: 10px;
         right: 10px;
     }
     header ul.left li{
@@ -82,5 +88,18 @@
     }
     .sale-blocks-wrapper .block .content{
         display: none;
+    }
+    .product-list-wrapper .product{
+        padding: 0;
+    }
+    .advances-wrapper .item{
+        border: 1px solid #adbc37;
+        margin-bottom: 10px;
+    }
+    .advances-wrapper .item > *{
+        width: 60%;
+        margin: 10px;
+        color: #adbc37;
+        text-transform: uppercase;
     }
 }

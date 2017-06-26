@@ -20,8 +20,6 @@
 </head>
 
 <body <?php body_class('browser-default'); ?>>
-	<a class="skip-link screen-reader-text hide" href="#content"><?php esc_html_e( 'Skip to content', 'sango' ); ?></a>
-
 	<header id="masthead" class="site-header" role="banner">
 		<div class="header-wrapper">
 			<div class="col">
@@ -37,7 +35,9 @@
 				</a>
 			</div>
 			<div class="col">
-				<a href="#" id="menu-toogle" data-activates="main-menu" class="button-collapse right"></a>
+				<a href="#" id="menu-toogle" data-activates="main-menu" class="button-collapse right">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/menu.svg" alt="Menu">
+				</a>
 			</div>
 		</div>
 	</header><!-- #masthead -->
