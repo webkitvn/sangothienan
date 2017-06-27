@@ -39,7 +39,7 @@
 						All rights reserved 2017 © DSGN. Website by Amwind, the Branding Agency
 						</div>
 						<div class="align-right right">
-							Đang Online: <b>2</b> | Trong Ngày: <b>37</b> | Truy Cập Tháng: <b>354</b> | Tổng Truy Cập: <b>1063</b>
+							Đang Online: <b><?php echo do_shortcode('[wpstatistics stat=usersonline]'); ?></b> | Trong Ngày: <b><?php echo do_shortcode('[wpstatistics stat=visits time=today]'); ?></b> | Truy Cập Tháng: <b><?php echo do_shortcode('[wpstatistics stat=visits time=month]'); ?></b> | Tổng Truy Cập: <b><?php echo do_shortcode('[wpstatistics stat=visits time=total]'); ?></b>
 						</div>
 					</div>
 				</div>
