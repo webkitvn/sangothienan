@@ -2074,3 +2074,6 @@ input[type="number"]::-webkit-inner-spin-button {
 .woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register{
   border-radius: 0;
 }
+.lmp_rotate{
+  color: #adbc37;
+}
