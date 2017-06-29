@@ -103,4 +103,47 @@
         color: #adbc37;
         text-transform: uppercase;
     }
+    .post-item{
+        padding-left: 0;
+    }
+    .post-item .post-time{
+        border: 0;
+    }
+    .post-item .post-time span{
+        color: #FFF;
+        text-shadow: 0 1px 1px rgba(0,0,0,.5);
+    }
+    .post-detail-wrapper .post{
+        padding-left: 0;
+    }
+    .post-detail-wrapper .post .entry-title{
+        margin-bottom: 0;
+    }
+    .post-detail-wrapper .post .post-time{
+        position: static;
+        border: 0;
+        width: auto;
+        text-align: left;
+    }
+    .post-detail-wrapper .post .post-time span{
+        display: inline;
+        font-size: 1em !important;
+    }
+    .post-detail-wrapper .post .post-link{
+        position: static;
+        width: 100%;
+    }
+    .contact-info .contact-info-wrapper h3{
+        text-align: center;
+    }
+    .contact-info .contact-info-wrapper .form{
+        padding-right: 0;
+    }
+    .map .address-block{
+        width: 100%;
+        float: none;
+    }
+    .map-block{
+        width: 100%;
+    }
 }
