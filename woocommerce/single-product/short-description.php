@@ -35,12 +35,29 @@ if ( ! $post->post_excerpt ) {
 		$product_len = $product->get_length();
 		$product_wid = $product->get_width();
 		$product_hei = $product->get_height();
+		$terms = get_the_terms( get_the_ID(), 'thuong_hieu');
 	?>
     <p>
-	    <strong>Nhà sản xuất:</strong> MAXLOCK<br>
+    	<?php if(!empty($terms)) : ?>
+	    <strong>Nhà sản xuất:</strong> 
+		<?php foreach($terms as $term) : ?>
+			<?php echo $term->name ?>
+		<?php endforeach; ?>
+	    <br>
+		<?php endif; ?>
 		<strong>Mã sản phẩm:</strong> <?php echo $product_sku; ?><br>
 		<strong>Hàng trong kho:</strong> 
-			<?php echo $product_qty != 0 ? $product_qty : "Hết"; ?><br>
+			<?php 
+				if($product->is_in_stock()){
+					if($product_qty)
+						echo $product_qty;
+					else
+						echo "Còn hàng";
+				}
+				else
+					echo "Hết hàng";
+			?>
+			<br>
 		<strong>Trọng lượng:</strong> 
 			<?php echo $product_wei != 0 ? $product_wei.get_option( 'woocommerce_weight_unit' ) : ""; ?><br>
 		<strong>Kích thước (L x W x H):</strong> 

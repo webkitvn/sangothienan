@@ -72,21 +72,21 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<p><small>Mua hàng qua điện thoại</small></p>
 		<div class="phones">
 			<img src="<?php echo get_template_directory_uri();?>/img/24h-icon.svg" alt="24h">
-			<span class="first">0912 345 678</span> | <span>0901 123 456</span>
+			<span class="first">(028) 3 811 8777</span> | <span>0976 590 081</span>
 		</div>
 		<p><b>Tại sao nên mua hàng tại Thiên Ân</b></p>
 		<ul>
 			<li>
-				<img src="<?php echo get_template_directory_uri();?>/img/icon-1.svg" alt="Nhập khẩu chính hãng tại Đức">
-				Nhập khẩu chính hãng tại Đức
+				<img src="<?php echo get_template_directory_uri();?>/img/icon-1.svg" alt="Nhập khẩu chính hãng từ Châu Âu">
+				Nhập khẩu chính hãng từ Châu Âu
 			</li>
 			<li>
 				<img src="<?php echo get_template_directory_uri();?>/img/icon-2.svg" alt="Miễn Phí Giao Hàng Trong Nội Thành">
 				Miễn Phí Giao Hàng Trong Nội Thành
 			</li>
 			<li>
-				<img src="<?php echo get_template_directory_uri();?>/img/icon-3.svg" alt="Bảo Hành Trọn Đời Sản Phẩm">
-				Bảo Hành Trọn Đời Sản Phẩm
+				<img src="<?php echo get_template_directory_uri();?>/img/icon-3.svg" alt="Bảo Hành Trên 20 năm">
+				Bảo Hành Trên 20 năm
 			</li>
 			<li>
 				<img src="<?php echo get_template_directory_uri();?>/img/icon-4.svg" alt="Chứng Nhận Quốc Tế">

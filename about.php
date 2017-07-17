@@ -110,22 +110,22 @@
 			<div class="row">
 				<div class="col s12">
 					<ul>
-						<li><img src="<?php echo get_template_directory_uri(); ?>/img/customers/123pabb.jpg" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri(); ?>/img/customers/123pacb.jpg" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri(); ?>/img/customers/123pagb.jpg" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri(); ?>/img/customers/123pbab.jpg" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri(); ?>/img/customers/123pbvb.jpg" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri(); ?>/img/customers/123pdab.jpg" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri(); ?>/img/customers/123phdb.jpg" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri(); ?>/img/customers/123pmb.jpg" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri(); ?>/img/customers/123pnvb.jpg" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri(); ?>/img/customers/123poceb.jpg" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri(); ?>/img/customers/123ppgb.jpg" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri(); ?>/img/customers/123pseab.jpg" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri(); ?>/img/customers/123psgb.jpg" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri(); ?>/img/customers/123pvcb.jpg" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri(); ?>/img/customers/123pvtb.jpg" alt=""></li>
-						<li><img src="<?php echo get_template_directory_uri(); ?>/img/customers/123pagb.jpg" alt=""></li>
+						<li><img src="<?php echo get_template_directory_uri(); ?>/img/customers/123PABB.jpg" alt=""></li>
+						<li><img src="<?php echo get_template_directory_uri(); ?>/img/customers/123PACB.jpg" alt=""></li>
+						<li><img src="<?php echo get_template_directory_uri(); ?>/img/customers/123PAGB.jpg" alt=""></li>
+						<li><img src="<?php echo get_template_directory_uri(); ?>/img/customers/123PBAB.jpg" alt=""></li>
+						<li><img src="<?php echo get_template_directory_uri(); ?>/img/customers/123PBVB.jpg" alt=""></li>
+						<li><img src="<?php echo get_template_directory_uri(); ?>/img/customers/123PDAB.jpg" alt=""></li>
+						<li><img src="<?php echo get_template_directory_uri(); ?>/img/customers/123PHDB.jpg" alt=""></li>
+						<li><img src="<?php echo get_template_directory_uri(); ?>/img/customers/123PMB.jpg" alt=""></li>
+						<li><img src="<?php echo get_template_directory_uri(); ?>/img/customers/123PNVB.jpg" alt=""></li>
+						<li><img src="<?php echo get_template_directory_uri(); ?>/img/customers/123POCEB.jpg" alt=""></li>
+						<li><img src="<?php echo get_template_directory_uri(); ?>/img/customers/123PPGB.jpg" alt=""></li>
+						<li><img src="<?php echo get_template_directory_uri(); ?>/img/customers/123PSEAB.jpg" alt=""></li>
+						<li><img src="<?php echo get_template_directory_uri(); ?>/img/customers/123PSGB.jpg" alt=""></li>
+						<li><img src="<?php echo get_template_directory_uri(); ?>/img/customers/123PVCB.jpg" alt=""></li>
+						<li><img src="<?php echo get_template_directory_uri(); ?>/img/customers/123PVTB.jpg" alt=""></li>
+						<li><img src="<?php echo get_template_directory_uri(); ?>/img/customers/123PAGB.jpg" alt=""></li>
 					</ul>
 				</div>
 			</div>

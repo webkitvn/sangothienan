@@ -243,3 +243,12 @@ function webbalo_custom_override_default_address_fields( $address_fields )
     unset( $address_fields['company'] );
     return $address_fields;
 }
+add_filter('woocommerce_single_product_image_thumbnail_html', 'remove_featured_image', 10, 3);
+
+function remove_featured_image($html, $attachment_id, $post_id) {
+    $featured_image = get_post_thumbnail_id($post_id);
+    if ($attachment_id != $featured_image) {
+        return $html;
+    }
+    return '';
+}
